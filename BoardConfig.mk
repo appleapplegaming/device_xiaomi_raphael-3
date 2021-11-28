@@ -161,8 +161,8 @@ include device/qcom/sepolicy_vndr/SEPolicy.mk
 SYSTEM_EXT_PRIVATE_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/private
 SYSTEM_EXT_PUBLIC_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/public
 BOARD_VENDOR_SEPOLICY_DIRS += $(DEVICE_PATH)/sepolicy/vendor
-SELINUX_IGNORE_NEVERALLOWS := true
-
+#SELINUX_IGNORE_NEVERALLOWS := true
+BOARD_KERNEL_CMDLINE += androidboot.selinux=permissive
 # Verified Boot
 BOARD_AVB_ENABLE := true
 BOARD_AVB_MAKE_VBMETA_IMAGE_ARGS += --flags 3

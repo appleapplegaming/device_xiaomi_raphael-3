@@ -13,10 +13,10 @@ $(call inherit-product, $(SRC_TARGET_DIR)/product/product_launched_with_p.mk)
 $(call inherit-product, device/xiaomi/raphael/device.mk)
 
 # Inherit some common Arrow stuff.
-$(call inherit-product, vendor/arrow/config/common.mk)
+$(call inherit-product, vendor/fluid/config/common.mk)
 
 # Device identifier. This must come after all inclusions.
-PRODUCT_NAME := arrow_raphael
+PRODUCT_NAME := fluid_raphael
 PRODUCT_DEVICE := raphael
 PRODUCT_BRAND := Xiaomi
 PRODUCT_MODEL := Redmi K20 Pro
@@ -33,4 +33,4 @@ PRODUCT_BUILD_PROP_OVERRIDES += \
 
 BUILD_FINGERPRINT := google/walleye/walleye:8.1.0/OPM1.171019.011/4448085:user/release-keys
 
-TARGET_INCLUDE_PIXEL_CHARGER := true
+#TARGET_INCLUDE_PIXEL_CHARGER := true

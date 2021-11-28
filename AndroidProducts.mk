@@ -5,8 +5,8 @@
 #
 
 PRODUCT_MAKEFILES := \
-    $(LOCAL_DIR)/arrow_raphael.mk
+    $(LOCAL_DIR)/fluid_raphael.mk
 
 COMMON_LUNCH_CHOICES := \
-    arrow_raphael-userdebug \
-    arrow_raphael-eng
+    fluid_raphael-userdebug \
+    fluid_raphael-eng
